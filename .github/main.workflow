@@ -5,6 +5,5 @@ workflow "Easy Go" {
 
 action "executed" {
   uses = "./"
-  runs = "./entrypoint.sh"
   args = ["./example"]
 }
