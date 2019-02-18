@@ -1,5 +1,7 @@
-FROM golang:1.11.5
+FROM docker:18.09.2
 
-COPY entrypoint.sh ./
+COPY ./entrypoint.sh ./runner.sh /usr/local/bin/
 
-ENTRYPOINT ["./entrypoint.sh"]
+COPY ./Dockerfile.golang /build/Dockerfile
+
+ENTRYPOINT ["entrypoint.sh"]
