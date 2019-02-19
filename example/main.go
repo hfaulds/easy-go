@@ -7,5 +7,5 @@ import (
 )
 
 func main() {
-	fmt.Println(spew.Sdump("example"))
+	fmt.Println(spew.Sdump("example 2"))
 }
