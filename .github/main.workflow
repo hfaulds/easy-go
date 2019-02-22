@@ -9,8 +9,6 @@ action "executed" {
   secrets = [
     "DOCKER_PASSWORD",
     "DOCKER_USERNAME",
+    "ACTION_CACHE_NAME",
   ]
-  env = {
-    "ACTION_CACHE_NAME" = "actions-test-cache"
-  }
 }
