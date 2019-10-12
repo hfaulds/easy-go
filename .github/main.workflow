@@ -6,9 +6,9 @@ workflow "Easy Go" {
 action "executed" {
   uses = "./"
   args = ["./example"]
-  secrets = ["DOCKER_PASSWORD"]
-  env = {
-    "DOCKER_USERNAME" = "fauldsh"
-    "ACTION_CACHE_NAME" = "actions-test-cache"
-  }
+  secrets = [
+    "DOCKER_PASSWORD",
+    "DOCKER_USERNAME",
+    "ACTION_CACHE_NAME",
+  ]
 }
